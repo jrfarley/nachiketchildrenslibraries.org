@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="robots" content="noindex,follow">
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/about.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/gallery.css" type="text/css" rel="stylesheet">
+    <title>Nachiket Children's Libraries | Gallery</title>
+    <link rel="icon" href="resources/icons/flavicon.png">
+    <meta name="description" content=">Check out our images of the Nachiket Children's Libraries community.">
+    <link rel=”canonical” href=”https://nachiketchildrenslibraries.org/gallery” />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body onresize="arrangeShowcase()">
+  <div id="modal" onclick="closeModal();">
+    <span id="close">&times;</span>
+    <div id="modal-content-caption">
+      <img id="modal-content" alt="" src="resources/icons/empty.jpg">
+    </div>
+  </div>
+
+    <!DOCTYPE html>
+<div id="header">
+  <div id="float-container">
+    <a href = "/" title="Home"><div class="header-item" id = "logo-container">
+      <img src="resources/icons/Nachiket_Logo--English.png" alt="Nachiket logo" id="logo-image">
+    </div></a>
+    <div class="header-item" id = "menu">
+      <a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a>
+      <a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a>
+      <a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a>
+      <a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a>
+      <a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a>
+    </div>
+    <div class="header-item" id = "dropdown-icon-container">
+      <div id="nav-icon" onclick="navToggle(this); showDropdown();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
+  <nav id="menu-dropdown">
+    <ul>
+      <li><a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a></li>
+      <li><a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a></li>
+      <li><a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a></li>
+      <li><a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a></li>
+      <li><a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  var menuItem=document.getElementById("float-container").getElementsByClassName("menu-item");
+  for (i=0; i< menuItem.length; i++){
+    if(window.location.pathname.split("/").pop() == menuItem[i].parentElement.href.split("/").pop()){
+      menuItem[i].classList.add("current");
+    }
+  }
+</script>
+
+    <div id="image-container">
+      <img id="aboutImage" src="resources/images/Banners/Scan32_Complete.jpg" style="object-position: center top; object-fit: cover;" alt="Nachiket reader's drawing of women dancing">
+      <div id="about-title-container">
+        <h1 id="about-title">
+          Image Gallery
+        </h1>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <div class="content">
+        <div id="gallery-showcase">
+                    <div class="showcase-image-container" onclick='showGallery(0);'>
+            <img style="object-fit: fill; width: 100%; height: 90%;" src='resources/images/Organized/Artwork/Artwork.jpg' alt="Nachiket Artwork">
+            <div class="blog-image-caption-container">
+              <p>Artwork</p>
+            </div>
+          </div>
+                    <div class="showcase-image-container" onclick='showGallery(1);'>
+            <img style="object-fit: fill; width: 100%; height: 90%;" src='resources/images/Organized/Libraries/Libraries.jpg' alt="Nachiket Libraries">
+            <div class="blog-image-caption-container">
+              <p>Libraries</p>
+            </div>
+          </div>
+                    <div class="showcase-image-container" onclick='showGallery(2);'>
+            <img style="object-fit: fill; width: 100%; height: 90%;" src='resources/images/Organized/Activities/Activities.jpg' alt="Nachiket Activities">
+            <div class="blog-image-caption-container">
+              <p>Activities</p>
+            </div>
+          </div>
+                    <div class="showcase-image-container" onclick='showGallery(3);'>
+            <img style="object-fit: fill; width: 100%; height: 90%;" src='resources/images/Organized/Staff/Staff.jpg' alt="Nachiket Staff">
+            <div class="blog-image-caption-container">
+              <p>Staff</p>
+            </div>
+          </div>
+                    <div class="showcase-image-container" onclick='showGallery(4);'>
+            <img style="object-fit: fill; width: 100%; height: 90%;" src='resources/images/Organized/Readers/Readers.jpg' alt="Nachiket Readers">
+            <div class="blog-image-caption-container">
+              <p>Readers</p>
+            </div>
+          </div>
+                    <div class="showcase-image-container" onclick='showGallery(5);'>
+            <img style="object-fit: fill; width: 100%; height: 90%;" src='resources/images/Organized/Community/Community.jpg' alt="Nachiket Community">
+            <div class="blog-image-caption-container">
+              <p>Community</p>
+            </div>
+          </div>
+                            
+          <div class="hidden-gallery hidden" id= 'Artwork-gallery'>
+            <div class="gallery-triangle">
+              <img src="resources/icons/triangle.png" style="width:100%;height:auto;" alt="down-arrow">
+            </div>
+            <div class="gallery-container" id= 'Artwork-gallery-container'>
+              <a id='Artwork'></a>
+                                  <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0009.jpg' onclick="openModal('zIMG-20200828-WA0009.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0009.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan9_Complete.jpg' onclick="openModal('Scan9_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan9_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zdraw5.jpg' onclick="openModal('zdraw5.jpg');" src='resources/images/Organized/Artwork/Icons/zdraw5.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0008.jpg' onclick="openModal('zIMG-20200828-WA0008.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0008.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan8.jpg' onclick="openModal('Scan8.jpg');" src='resources/images/Organized/Artwork/Icons/Scan8.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'z.jpg' onclick="openModal('z.jpg');" src='resources/images/Organized/Artwork/Icons/z.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan13_000.jpg' onclick="openModal('Scan13_000.jpg');" src='resources/images/Organized/Artwork/Icons/Scan13_000.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan38_Complete.jpg' onclick="openModal('Scan38_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan38_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan19.jpg' onclick="openModal('Scan19.jpg');" src='resources/images/Organized/Artwork/Icons/Scan19.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan81.jpg' onclick="openModal('Scan81.jpg');" src='resources/images/Organized/Artwork/Icons/Scan81.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan42.jpg' onclick="openModal('Scan42.jpg');" src='resources/images/Organized/Artwork/Icons/Scan42.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan56.jpg' onclick="openModal('Scan56.jpg');" src='resources/images/Organized/Artwork/Icons/Scan56.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan35_Complete.jpg' onclick="openModal('Scan35_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan35_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan60_Complete.jpg' onclick="openModal('Scan60_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan60_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan32_Complete.jpg' onclick="openModal('Scan32_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan32_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan72_Complete.jpg' onclick="openModal('Scan72_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan72_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan80.jpg' onclick="openModal('Scan80.jpg');" src='resources/images/Organized/Artwork/Icons/Scan80.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan20_Complete.jpg' onclick="openModal('Scan20_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan20_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan5_Complete.jpg' onclick="openModal('Scan5_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan5_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan82.jpg' onclick="openModal('Scan82.jpg');" src='resources/images/Organized/Artwork/Icons/Scan82.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan69.jpg' onclick="openModal('Scan69.jpg');" src='resources/images/Organized/Artwork/Icons/Scan69.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan41.jpg' onclick="openModal('Scan41.jpg');" src='resources/images/Organized/Artwork/Icons/Scan41.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan2_Complete.jpg' onclick="openModal('Scan2_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan2_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan16_Complete.jpg' onclick="openModal('Scan16_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan16_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan43_Complete.jpg' onclick="openModal('Scan43_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan43_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan51_Complete.jpg' onclick="openModal('Scan51_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan51_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Library.jpg' onclick="openModal('Library.jpg');" src='resources/images/Organized/Artwork/Icons/Library.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan68.jpg' onclick="openModal('Scan68.jpg');" src='resources/images/Organized/Artwork/Icons/Scan68.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan44.jpg' onclick="openModal('Scan44.jpg');" src='resources/images/Organized/Artwork/Icons/Scan44.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan78.jpg' onclick="openModal('Scan78.jpg');" src='resources/images/Organized/Artwork/Icons/Scan78.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan74_Complete.jpg' onclick="openModal('Scan74_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan74_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan21_Complete.jpg' onclick="openModal('Scan21_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan21_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan73_Complete.jpg' onclick="openModal('Scan73_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan73_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan26_Complete.jpg' onclick="openModal('Scan26_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan26_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'z2004picture3.jpg' onclick="openModal('z2004picture3.jpg');" src='resources/images/Organized/Artwork/Icons/z2004picture3.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan79.jpg' onclick="openModal('Scan79.jpg');" src='resources/images/Organized/Artwork/Icons/Scan79.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan45.jpg' onclick="openModal('Scan45.jpg');" src='resources/images/Organized/Artwork/Icons/Scan45.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan34_Complete.jpg' onclick="openModal('Scan34_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan34_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan47.jpg' onclick="openModal('Scan47.jpg');" src='resources/images/Organized/Artwork/Icons/Scan47.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan53.jpg' onclick="openModal('Scan53.jpg');" src='resources/images/Organized/Artwork/Icons/Scan53.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan57_Complete.jpg' onclick="openModal('Scan57_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan57_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan50_Complete.jpg' onclick="openModal('Scan50_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan50_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan3_Complete.jpg' onclick="openModal('Scan3_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan3_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan10_Complete.jpg' onclick="openModal('Scan10_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan10_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan52.jpg' onclick="openModal('Scan52.jpg');" src='resources/images/Organized/Artwork/Icons/Scan52.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200827-WA0027.jpg' onclick="openModal('zIMG-20200827-WA0027.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200827-WA0027.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan46.jpg' onclick="openModal('Scan46.jpg');" src='resources/images/Organized/Artwork/Icons/Scan46.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan63.jpg' onclick="openModal('Scan63.jpg');" src='resources/images/Organized/Artwork/Icons/Scan63.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan24_Complete.jpg' onclick="openModal('Scan24_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan24_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan23_Complete.jpg' onclick="openModal('Scan23_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan23_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan76_Complete.jpg' onclick="openModal('Scan76_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan76_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan36_Complete.jpg' onclick="openModal('Scan36_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan36_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan31_Complete.jpg' onclick="openModal('Scan31_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan31_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan62.jpg' onclick="openModal('Scan62.jpg');" src='resources/images/Organized/Artwork/Icons/Scan62.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan71(2).jpg' onclick="openModal('Scan71(2).jpg');" src='resources/images/Organized/Artwork/Icons/Scan71(2).jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan48.jpg' onclick="openModal('Scan48.jpg');" src='resources/images/Organized/Artwork/Icons/Scan48.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan55_Complete.jpg' onclick="openModal('Scan55_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan55_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan15_Complete.jpg' onclick="openModal('Scan15_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan15_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan40_Complete.jpg' onclick="openModal('Scan40_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan40_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan12_Complete.jpg' onclick="openModal('Scan12_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan12_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan6_Complete.jpg' onclick="openModal('Scan6_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan6_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zdraw10.jpg' onclick="openModal('zdraw10.jpg');" src='resources/images/Organized/Artwork/Icons/zdraw10.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan61.jpg' onclick="openModal('Scan61.jpg');" src='resources/images/Organized/Artwork/Icons/Scan61.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan75.jpg' onclick="openModal('Scan75.jpg');" src='resources/images/Organized/Artwork/Icons/Scan75.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan49.jpg' onclick="openModal('Scan49.jpg');" src='resources/images/Organized/Artwork/Icons/Scan49.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan1_Complete.jpg' onclick="openModal('Scan1_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan1_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan30_Complete.jpg' onclick="openModal('Scan30_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan30_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan71.jpg' onclick="openModal('Scan71.jpg');" src='resources/images/Organized/Artwork/Icons/Scan71.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan65.jpg' onclick="openModal('Scan65.jpg');" src='resources/images/Organized/Artwork/Icons/Scan65.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan59.jpg' onclick="openModal('Scan59.jpg');" src='resources/images/Organized/Artwork/Icons/Scan59.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan61(2).jpg' onclick="openModal('Scan61(2).jpg');" src='resources/images/Organized/Artwork/Icons/Scan61(2).jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan37_Complete.jpg' onclick="openModal('Scan37_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan37_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan77_Complete.jpg' onclick="openModal('Scan77_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan77_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan22_Complete.jpg' onclick="openModal('Scan22_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan22_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan25_Complete.jpg' onclick="openModal('Scan25_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan25_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan64.jpg' onclick="openModal('Scan64.jpg');" src='resources/images/Organized/Artwork/Icons/Scan64.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan70.jpg' onclick="openModal('Scan70.jpg');" src='resources/images/Organized/Artwork/Icons/Scan70.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan66.jpg' onclick="openModal('Scan66.jpg');" src='resources/images/Organized/Artwork/Icons/Scan66.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan14_Complete.jpg' onclick="openModal('Scan14_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan14_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan7_Complete.jpg' onclick="openModal('Scan7_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan7_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan54_Complete.jpg' onclick="openModal('Scan54_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan54_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan67.jpg' onclick="openModal('Scan67.jpg');" src='resources/images/Organized/Artwork/Icons/Scan67.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0014.jpg' onclick="openModal('zIMG-20200828-WA0014.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0014.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan17.jpg' onclick="openModal('Scan17.jpg');" src='resources/images/Organized/Artwork/Icons/Scan17.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan28_Complete.jpg' onclick="openModal('Scan28_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan28_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Artwork.jpg' onclick="openModal('Artwork.jpg');" src='resources/images/Organized/Artwork/Icons/Artwork.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0012.jpg' onclick="openModal('zIMG-20200828-WA0012.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0012.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0006.jpg' onclick="openModal('zIMG-20200828-WA0006.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0006.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan18_Complete.jpg' onclick="openModal('Scan18_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan18_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan4.jpg' onclick="openModal('Scan4.jpg');" src='resources/images/Organized/Artwork/Icons/Scan4.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan58_Complete.jpg' onclick="openModal('Scan58_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan58_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'artwork_slide.jpg' onclick="openModal('artwork_slide.jpg');" src='resources/images/Organized/Artwork/Icons/artwork_slide.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0007.jpg' onclick="openModal('zIMG-20200828-WA0007.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0007.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0013.jpg' onclick="openModal('zIMG-20200828-WA0013.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0013.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0011.jpg' onclick="openModal('zIMG-20200828-WA0011.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0011.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan11.jpg' onclick="openModal('Scan11.jpg');" src='resources/images/Organized/Artwork/Icons/Scan11.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan39.jpg' onclick="openModal('Scan39.jpg');" src='resources/images/Organized/Artwork/Icons/Scan39.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zdraw7b.jpg' onclick="openModal('zdraw7b.jpg');" src='resources/images/Organized/Artwork/Icons/zdraw7b.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Scan29_Complete.jpg' onclick="openModal('Scan29_Complete.jpg');" src='resources/images/Organized/Artwork/Icons/Scan29_Complete.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zdraw9.jpg' onclick="openModal('zdraw9.jpg');" src='resources/images/Organized/Artwork/Icons/zdraw9.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'zIMG-20200828-WA0010.jpg' onclick="openModal('zIMG-20200828-WA0010.jpg');" src='resources/images/Organized/Artwork/Icons/zIMG-20200828-WA0010.jpg' class='gallery-image Artwork-gallery-image' alt="Nachiket Artwork">
+                    </div>
+                    <!-- --- -->
+                                </div>
+          </div>
+          <div class="hidden-gallery hidden" id= 'Libraries-gallery'>
+            <div class="gallery-triangle">
+              <img src="resources/icons/triangle.png" style="width:100%;height:auto;" alt="down-arrow">
+            </div>
+            <div class="gallery-container" id= 'Libraries-gallery-container'>
+              <a id='Libraries'></a>
+                                  <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Tiwasaghatstaff.jpg' onclick="openModal('Tiwasaghatstaff.jpg');" src='resources/images/Organized/Libraries/Icons/Tiwasaghatstaff.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0389.JPG' onclick="openModal('IMG_0389.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0389.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0203.JPG' onclick="openModal('IMG_0203.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0203.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180228-WA0003.jpg' onclick="openModal('IMG-20180228-WA0003.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180228-WA0003.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1512.JPG' onclick="openModal('DSCN1512.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN1512.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180228-WA0004.jpg' onclick="openModal('IMG-20180228-WA0004.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180228-WA0004.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0364.JPG' onclick="openModal('IMG_0364.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0364.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180317-WA0005.jpg' onclick="openModal('IMG-20180317-WA0005.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180317-WA0005.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0595.JPG' onclick="openModal('DSCN0595.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN0595.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2941.jpg' onclick="openModal('IMG_2941.jpg');" src='resources/images/Organized/Libraries/Icons/IMG_2941.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0038.JPG' onclick="openModal('IMG_0038.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0038.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20181201-WA0030.jpg' onclick="openModal('IMG-20181201-WA0030.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20181201-WA0030.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1572.JPG' onclick="openModal('DSCN1572.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN1572.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0644.JPG' onclick="openModal('DSCN0644.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN0644.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0315.JPG' onclick="openModal('IMG_0315.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0315.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0665.JPG' onclick="openModal('IMG_0665.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0665.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '262.JPG' onclick="openModal('262.JPG');" src='resources/images/Organized/Libraries/Icons/262.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '276.JPG' onclick="openModal('276.JPG');" src='resources/images/Organized/Libraries/Icons/276.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1573.JPG' onclick="openModal('DSCN1573.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN1573.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0274.JPG' onclick="openModal('IMG_0274.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0274.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'ph049.jpg' onclick="openModal('ph049.jpg');" src='resources/images/Organized/Libraries/Icons/ph049.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1559.JPG' onclick="openModal('DSCN1559.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN1559.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '260.JPG' onclick="openModal('260.JPG');" src='resources/images/Organized/Libraries/Icons/260.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0698.JPG' onclick="openModal('IMG_0698.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0698.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '261.JPG' onclick="openModal('261.JPG');" src='resources/images/Organized/Libraries/Icons/261.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0288.JPG' onclick="openModal('IMG_0288.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0288.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'EarlyYears.jpg' onclick="openModal('EarlyYears.jpg');" src='resources/images/Organized/Libraries/Icons/EarlyYears.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1179.JPG' onclick="openModal('IMG_1179.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_1179.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '259.JPG' onclick="openModal('259.JPG');" src='resources/images/Organized/Libraries/Icons/259.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Tiwasaghat.jpg' onclick="openModal('Tiwasaghat.jpg');" src='resources/images/Organized/Libraries/Icons/Tiwasaghat.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DhamangaonLittleones.jpg' onclick="openModal('DhamangaonLittleones.jpg');" src='resources/images/Organized/Libraries/Icons/DhamangaonLittleones.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '264.JPG' onclick="openModal('264.JPG');" src='resources/images/Organized/Libraries/Icons/264.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0299.JPG' onclick="openModal('IMG_0299.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0299.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '272.JPG' onclick="openModal('272.JPG');" src='resources/images/Organized/Libraries/Icons/272.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20181203-WA0042.jpg' onclick="openModal('IMG-20181203-WA0042.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20181203-WA0042.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Libraries.jpg' onclick="openModal('Libraries.jpg');" src='resources/images/Organized/Libraries/Icons/Libraries.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '273.JPG' onclick="openModal('273.JPG');" src='resources/images/Organized/Libraries/Icons/273.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Storytime.jpg' onclick="openModal('Storytime.jpg');" src='resources/images/Organized/Libraries/Icons/Storytime.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0309.JPG' onclick="openModal('IMG_0309.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0309.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0296.JPG' onclick="openModal('IMG_0296.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0296.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_6426.JPG' onclick="openModal('IMG_6426.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_6426.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180416-WA0006.jpg' onclick="openModal('IMG-20180416-WA0006.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180416-WA0006.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'AmbikaNagarAnaghaGroup.JPG' onclick="openModal('AmbikaNagarAnaghaGroup.JPG');" src='resources/images/Organized/Libraries/Icons/AmbikaNagarAnaghaGroup.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'JD1.JPG' onclick="openModal('JD1.JPG');" src='resources/images/Organized/Libraries/Icons/JD1.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '136.JPG' onclick="openModal('136.JPG');" src='resources/images/Organized/Libraries/Icons/136.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180124-WA0025.jpg' onclick="openModal('IMG-20180124-WA0025.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180124-WA0025.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0097.JPG' onclick="openModal('IMG_0097.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0097.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0083.JPG' onclick="openModal('IMG_0083.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0083.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180416-WA0003.jpg' onclick="openModal('IMG-20180416-WA0003.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180416-WA0003.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '251.JPG' onclick="openModal('251.JPG');" src='resources/images/Organized/Libraries/Icons/251.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Storytime(1).jpg' onclick="openModal('Storytime(1).jpg');" src='resources/images/Organized/Libraries/Icons/Storytime(1).jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'ph050.jpg' onclick="openModal('ph050.jpg');" src='resources/images/Organized/Libraries/Icons/ph050.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0292.JPG' onclick="openModal('IMG_0292.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0292.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0286.JPG' onclick="openModal('IMG_0286.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0286.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0279.JPG' onclick="openModal('IMG_0279.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0279.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0086(1).JPG' onclick="openModal('IMG_0086(1).JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0086(1).JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0480.JPG' onclick="openModal('IMG_0480.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0480.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSC00227.JPG' onclick="openModal('DSC00227.JPG');" src='resources/images/Organized/Libraries/Icons/DSC00227.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '246.JPG' onclick="openModal('246.JPG');" src='resources/images/Organized/Libraries/Icons/246.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '252.JPG' onclick="openModal('252.JPG');" src='resources/images/Organized/Libraries/Icons/252.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCF0868.JPG' onclick="openModal('DSCF0868.JPG');" src='resources/images/Organized/Libraries/Icons/DSCF0868.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0278.JPG' onclick="openModal('IMG_0278.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0278.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180515-WA0047.jpg' onclick="openModal('IMG-20180515-WA0047.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20180515-WA0047.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1525.JPG' onclick="openModal('DSCN1525.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN1525.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '156.JPG' onclick="openModal('156.JPG');" src='resources/images/Organized/Libraries/Icons/156.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'TiwasaghatinCovid.jpg' onclick="openModal('TiwasaghatinCovid.jpg');" src='resources/images/Organized/Libraries/Icons/TiwasaghatinCovid.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20190522-WA0040.jpg' onclick="openModal('IMG-20190522-WA0040.jpg');" src='resources/images/Organized/Libraries/Icons/IMG-20190522-WA0040.jpg' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '236.JPG' onclick="openModal('236.JPG');" src='resources/images/Organized/Libraries/Icons/236.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '237.JPG' onclick="openModal('237.JPG');" src='resources/images/Organized/Libraries/Icons/237.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0604.JPG' onclick="openModal('DSCN0604.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN0604.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '155.JPG' onclick="openModal('155.JPG');" src='resources/images/Organized/Libraries/Icons/155.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0224.JPG' onclick="openModal('IMG_0224.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_0224.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1112.JPG' onclick="openModal('IMG_1112.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_1112.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0617.JPG' onclick="openModal('DSCN0617.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN0617.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0616.JPG' onclick="openModal('DSCN0616.JPG');" src='resources/images/Organized/Libraries/Icons/DSCN0616.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1111.JPG' onclick="openModal('IMG_1111.JPG');" src='resources/images/Organized/Libraries/Icons/IMG_1111.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '153.JPG' onclick="openModal('153.JPG');" src='resources/images/Organized/Libraries/Icons/153.JPG' class='gallery-image Libraries-gallery-image' alt="Nachiket Libraries">
+                    </div>
+                    <!-- --- -->
+                                </div>
+          </div>
+          <div class="hidden-gallery hidden" id= 'Activities-gallery'>
+            <div class="gallery-triangle">
+              <img src="resources/icons/triangle.png" style="width:100%;height:auto;" alt="down-arrow">
+            </div>
+            <div class="gallery-container" id= 'Activities-gallery-container'>
+              <a id='Activities'></a>
+                                  <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '214.JPG' onclick="openModal('214.JPG');" src='resources/images/Organized/Activities/Icons/214.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture170.jpg' onclick="openModal('Picture170.jpg');" src='resources/images/Organized/Activities/Icons/Picture170.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Yewada2.JPG' onclick="openModal('Yewada2.JPG');" src='resources/images/Organized/Activities/Icons/Yewada2.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180228-WA0003.jpg' onclick="openModal('IMG-20180228-WA0003.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20180228-WA0003.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0201.JPG' onclick="openModal('IMG_0201.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0201.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture166.jpg' onclick="openModal('Picture166.jpg');" src='resources/images/Organized/Activities/Icons/Picture166.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180228-WA0004.jpg' onclick="openModal('IMG-20180228-WA0004.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20180228-WA0004.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0238.JPG' onclick="openModal('IMG_0238.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0238.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0239.JPG' onclick="openModal('IMG_0239.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0239.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Yewada4.JPG' onclick="openModal('Yewada4.JPG');" src='resources/images/Organized/Activities/Icons/Yewada4.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20190824-WA0009.jpg' onclick="openModal('IMG-20190824-WA0009.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20190824-WA0009.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0013.jpg' onclick="openModal('IMG_0013.jpg');" src='resources/images/Organized/Activities/Icons/IMG_0013.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_20171122_144919.jpg' onclick="openModal('IMG_20171122_144919.jpg');" src='resources/images/Organized/Activities/Icons/IMG_20171122_144919.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Yewada6.JPG' onclick="openModal('Yewada6.JPG');" src='resources/images/Organized/Activities/Icons/Yewada6.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0010.jpg' onclick="openModal('IMG_0010.jpg');" src='resources/images/Organized/Activities/Icons/IMG_0010.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0038.JPG' onclick="openModal('IMG_0038.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0038.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'A09.jpg' onclick="openModal('A09.jpg');" src='resources/images/Organized/Activities/Icons/A09.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'WritingEssays.JPG' onclick="openModal('WritingEssays.JPG');" src='resources/images/Organized/Activities/Icons/WritingEssays.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '288.JPG' onclick="openModal('288.JPG');" src='resources/images/Organized/Activities/Icons/288.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0644.JPG' onclick="openModal('DSCN0644.JPG');" src='resources/images/Organized/Activities/Icons/DSCN0644.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0665.JPG' onclick="openModal('IMG_0665.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0665.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0117.JPG' onclick="openModal('IMG_0117.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0117.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'CheckingReadingLevel.jpg' onclick="openModal('CheckingReadingLevel.jpg');" src='resources/images/Organized/Activities/Icons/CheckingReadingLevel.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0116.JPG' onclick="openModal('IMG_0116.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0116.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0472.JPG' onclick="openModal('IMG_0472.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0472.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'tree_planting.jpg' onclick="openModal('tree_planting.jpg');" src='resources/images/Organized/Activities/Icons/tree_planting.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '289.JPG' onclick="openModal('289.JPG');" src='resources/images/Organized/Activities/Icons/289.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0248.JPG' onclick="openModal('IMG_0248.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0248.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1140.JPG' onclick="openModal('IMG_1140.JPG');" src='resources/images/Organized/Activities/Icons/IMG_1140.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201126-WA0005.jpg' onclick="openModal('IMG-20201126-WA0005.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201126-WA0005.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0667.JPG' onclick="openModal('IMG_0667.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0667.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20171229-WA0017.jpg' onclick="openModal('IMG-20171229-WA0017.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20171229-WA0017.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'shibirphoto1-9.jpg' onclick="openModal('shibirphoto1-9.jpg');" src='resources/images/Organized/Activities/Icons/shibirphoto1-9.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture104.jpg' onclick="openModal('Picture104.jpg');" src='resources/images/Organized/Activities/Icons/Picture104.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'ArtinDhamangaon.jpg' onclick="openModal('ArtinDhamangaon.jpg');" src='resources/images/Organized/Activities/Icons/ArtinDhamangaon.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1362.JPG' onclick="openModal('DSCN1362.JPG');" src='resources/images/Organized/Activities/Icons/DSCN1362.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0049.JPG' onclick="openModal('IMG_0049.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0049.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_6410.JPG' onclick="openModal('IMG_6410.JPG');" src='resources/images/Organized/Activities/Icons/IMG_6410.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture074.jpg' onclick="openModal('Picture074.jpg');" src='resources/images/Organized/Activities/Icons/Picture074.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0529.JPG' onclick="openModal('IMG_0529.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0529.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201208-WA0018.jpg' onclick="openModal('IMG-20201208-WA0018.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201208-WA0018.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'B09.jpg' onclick="openModal('B09.jpg');" src='resources/images/Organized/Activities/Icons/B09.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0674.JPG' onclick="openModal('IMG_0674.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0674.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0675.JPG' onclick="openModal('IMG_0675.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0675.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0056.JPG' onclick="openModal('IMG_0056.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0056.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Storytime.jpg' onclick="openModal('Storytime.jpg');" src='resources/images/Organized/Activities/Icons/Storytime.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0240.JPG' onclick="openModal('IMG_0240.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0240.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201208-WA0017.jpg' onclick="openModal('IMG-20201208-WA0017.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201208-WA0017.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1618.JPG' onclick="openModal('DSCN1618.JPG');" src='resources/images/Organized/Activities/Icons/DSCN1618.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'StorytellingJunaDhamangaon.jpg' onclick="openModal('StorytellingJunaDhamangaon.jpg');" src='resources/images/Organized/Activities/Icons/StorytellingJunaDhamangaon.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0646.JPG' onclick="openModal('IMG_0646.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0646.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'à¤¸à¥à¤¶à¥€à¤²à¤¨à¤—à¤°à¤µà¥ƒà¤•à¥à¤·à¤²à¤¾à¤—à¤µà¤¡à¥¨(2).jpg' onclick="openModal('à¤¸à¥à¤¶à¥€à¤²à¤¨à¤—à¤°à¤µà¥ƒà¤•à¥à¤·à¤²à¤¾à¤—à¤µà¤¡à¥¨(2).jpg');" src='resources/images/Organized/Activities/Icons/à¤¸à¥à¤¶à¥€à¤²à¤¨à¤—à¤°à¤µà¥ƒà¤•à¥à¤·à¤²à¤¾à¤—à¤µà¤¡à¥¨(2).jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180124-WA0025.jpg' onclick="openModal('IMG-20180124-WA0025.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20180124-WA0025.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180416-WA0003.jpg' onclick="openModal('IMG-20180416-WA0003.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20180416-WA0003.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1158.JPG' onclick="openModal('IMG_1158.JPG');" src='resources/images/Organized/Activities/Icons/IMG_1158.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'shibirphoto1-4.jpg' onclick="openModal('shibirphoto1-4.jpg');" src='resources/images/Organized/Activities/Icons/shibirphoto1-4.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Activities.JPG' onclick="openModal('Activities.JPG');" src='resources/images/Organized/Activities/Icons/Activities.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'shibirphoto1.jpg' onclick="openModal('shibirphoto1.jpg');" src='resources/images/Organized/Activities/Icons/shibirphoto1.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0455.JPG' onclick="openModal('IMG_0455.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0455.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'phoo4.jpg' onclick="openModal('phoo4.jpg');" src='resources/images/Organized/Activities/Icons/phoo4.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '286.JPG' onclick="openModal('286.JPG');" src='resources/images/Organized/Activities/Icons/286.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0247.JPG' onclick="openModal('IMG_0247.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0247.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1159.JPG' onclick="openModal('IMG_1159.JPG');" src='resources/images/Organized/Activities/Icons/IMG_1159.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0251.JPG' onclick="openModal('IMG_0251.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0251.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'shibir2010.JPG' onclick="openModal('shibir2010.JPG');" src='resources/images/Organized/Activities/Icons/shibir2010.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'shibirphoto1-7.jpg' onclick="openModal('shibirphoto1-7.jpg');" src='resources/images/Organized/Activities/Icons/shibirphoto1-7.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0442.JPG' onclick="openModal('IMG_0442.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0442.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'shibirphoto1-6.jpg' onclick="openModal('shibirphoto1-6.jpg');" src='resources/images/Organized/Activities/Icons/shibirphoto1-6.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '291.JPG' onclick="openModal('291.JPG');" src='resources/images/Organized/Activities/Icons/291.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '209.JPG' onclick="openModal('209.JPG');" src='resources/images/Organized/Activities/Icons/209.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'pic068.jpg' onclick="openModal('pic068.jpg');" src='resources/images/Organized/Activities/Icons/pic068.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201202-WA0013.jpg' onclick="openModal('IMG-20201202-WA0013.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201202-WA0013.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0220.JPG' onclick="openModal('IMG_0220.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0220.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201202-WA0012.jpg' onclick="openModal('IMG-20201202-WA0012.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201202-WA0012.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture195.jpg' onclick="openModal('Picture195.jpg');" src='resources/images/Organized/Activities/Icons/Picture195.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'P09.JPG' onclick="openModal('P09.JPG');" src='resources/images/Organized/Activities/Icons/P09.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'ScienceFunB.JPG' onclick="openModal('ScienceFunB.JPG');" src='resources/images/Organized/Activities/Icons/ScienceFunB.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201130-WA0027.jpg' onclick="openModal('IMG-20201130-WA0027.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201130-WA0027.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201130-WA0026.jpg' onclick="openModal('IMG-20201130-WA0026.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201130-WA0026.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0230.JPG' onclick="openModal('IMG_0230.JPG');" src='resources/images/Organized/Activities/Icons/IMG_0230.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201210-WA0027.jpg' onclick="openModal('IMG-20201210-WA0027.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201210-WA0027.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0588.JPG' onclick="openModal('DSCN0588.JPG');" src='resources/images/Organized/Activities/Icons/DSCN0588.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture141.jpg' onclick="openModal('Picture141.jpg');" src='resources/images/Organized/Activities/Icons/Picture141.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20200215-WA0012.jpg' onclick="openModal('IMG-20200215-WA0012.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20200215-WA0012.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'SciencefunA.JPG' onclick="openModal('SciencefunA.JPG');" src='resources/images/Organized/Activities/Icons/SciencefunA.JPG' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201130-WA0025.jpg' onclick="openModal('IMG-20201130-WA0025.jpg');" src='resources/images/Organized/Activities/Icons/IMG-20201130-WA0025.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'RoomArtActivity.jpg' onclick="openModal('RoomArtActivity.jpg');" src='resources/images/Organized/Activities/Icons/RoomArtActivity.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture140.jpg' onclick="openModal('Picture140.jpg');" src='resources/images/Organized/Activities/Icons/Picture140.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture168.jpg' onclick="openModal('Picture168.jpg');" src='resources/images/Organized/Activities/Icons/Picture168.jpg' class='gallery-image Activities-gallery-image' alt="Nachiket Activities">
+                    </div>
+                    <!-- --- -->
+                                </div>
+          </div>
+          <div class="hidden-gallery hidden" id= 'Staff-gallery'>
+            <div class="gallery-triangle">
+              <img src="resources/icons/triangle.png" style="width:100%;height:auto;" alt="down-arrow">
+            </div>
+            <div class="gallery-container" id= 'Staff-gallery-container'>
+              <a id='Staff'></a>
+                                  <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '20210310_190209.jpg' onclick="openModal('20210310_190209.jpg');" src='resources/images/Organized/Staff/Icons/20210310_190209.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'ph029.jpg' onclick="openModal('ph029.jpg');" src='resources/images/Organized/Staff/Icons/ph029.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1511.JPG' onclick="openModal('DSCN1511.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1511.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1505.JPG' onclick="openModal('DSCN1505.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1505.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'TESTIMONY_PREVIEW.png' onclick="openModal('TESTIMONY_PREVIEW.png');" src='resources/images/Organized/Staff/Icons/TESTIMONY_PREVIEW.png' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'AmbikaNagarAnagha&areader.jpg' onclick="openModal('AmbikaNagarAnagha&areader.jpg');" src='resources/images/Organized/Staff/Icons/AmbikaNagarAnagha&areader.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '161.JPG' onclick="openModal('161.JPG');" src='resources/images/Organized/Staff/Icons/161.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0163.JPG' onclick="openModal('IMG_0163.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0163.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20190921-WA0026.jpg' onclick="openModal('IMG-20190921-WA0026.jpg');" src='resources/images/Organized/Staff/Icons/IMG-20190921-WA0026.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '158.JPG' onclick="openModal('158.JPG');" src='resources/images/Organized/Staff/Icons/158.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1517.JPG' onclick="openModal('DSCN1517.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1517.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0211.JPG' onclick="openModal('IMG_0211.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0211.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '211.JPG' onclick="openModal('211.JPG');" src='resources/images/Organized/Staff/Icons/211.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '2004Opening.jpg' onclick="openModal('2004Opening.jpg');" src='resources/images/Organized/Staff/Icons/2004Opening.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0159.JPG' onclick="openModal('IMG_0159.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0159.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '238.JPG' onclick="openModal('238.JPG');" src='resources/images/Organized/Staff/Icons/238.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0372.JPG' onclick="openModal('IMG_0372.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0372.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20201129-WA0000.jpg' onclick="openModal('IMG-20201129-WA0000.jpg');" src='resources/images/Organized/Staff/Icons/IMG-20201129-WA0000.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '263.JPG' onclick="openModal('263.JPG');" src='resources/images/Organized/Staff/Icons/263.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSC00202.JPG' onclick="openModal('DSC00202.JPG');" src='resources/images/Organized/Staff/Icons/DSC00202.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'WorkshopOct2019A.jpg' onclick="openModal('WorkshopOct2019A.jpg');" src='resources/images/Organized/Staff/Icons/WorkshopOct2019A.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSC00203.JPG' onclick="openModal('DSC00203.JPG');" src='resources/images/Organized/Staff/Icons/DSC00203.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture113.jpg' onclick="openModal('Picture113.jpg');" src='resources/images/Organized/Staff/Icons/Picture113.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20190522-WA0014.jpg' onclick="openModal('IMG-20190522-WA0014.jpg');" src='resources/images/Organized/Staff/Icons/IMG-20190522-WA0014.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1375.JPG' onclick="openModal('DSCN1375.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1375.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture111.jpg' onclick="openModal('Picture111.jpg');" src='resources/images/Organized/Staff/Icons/Picture111.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0896.JPG' onclick="openModal('IMG_0896.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0896.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'WorkshopOct2019B.jpg' onclick="openModal('WorkshopOct2019B.jpg');" src='resources/images/Organized/Staff/Icons/WorkshopOct2019B.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '275.JPG' onclick="openModal('275.JPG');" src='resources/images/Organized/Staff/Icons/275.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0298.JPG' onclick="openModal('IMG_0298.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0298.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture114.jpg' onclick="openModal('Picture114.jpg');" src='resources/images/Organized/Staff/Icons/Picture114.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '265.JPG' onclick="openModal('265.JPG');" src='resources/images/Organized/Staff/Icons/265.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '271.JPG' onclick="openModal('271.JPG');" src='resources/images/Organized/Staff/Icons/271.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '258.JPG' onclick="openModal('258.JPG');" src='resources/images/Organized/Staff/Icons/258.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '266.JPG' onclick="openModal('266.JPG');" src='resources/images/Organized/Staff/Icons/266.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'RaviGodbole.jpg' onclick="openModal('RaviGodbole.jpg');" src='resources/images/Organized/Staff/Icons/RaviGodbole.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '267.JPG' onclick="openModal('267.JPG');" src='resources/images/Organized/Staff/Icons/267.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1589.JPG' onclick="openModal('DSCN1589.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1589.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Booktalk.jpg' onclick="openModal('Booktalk.jpg');" src='resources/images/Organized/Staff/Icons/Booktalk.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0098.JPG' onclick="openModal('IMG_0098.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0098.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '256.JPG' onclick="openModal('256.JPG');" src='resources/images/Organized/Staff/Icons/256.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0678.JPG' onclick="openModal('IMG_0678.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0678.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0123.JPG' onclick="openModal('IMG_0123.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0123.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1591.JPG' onclick="openModal('DSCN1591.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1591.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0057.JPG' onclick="openModal('IMG_0057.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0057.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '269.JPG' onclick="openModal('269.JPG');" src='resources/images/Organized/Staff/Icons/269.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0475.JPG' onclick="openModal('DSCN0475.JPG');" src='resources/images/Organized/Staff/Icons/DSCN0475.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20210311-WA0018.jpg' onclick="openModal('IMG-20210311-WA0018.jpg');" src='resources/images/Organized/Staff/Icons/IMG-20210311-WA0018.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0090.JPG' onclick="openModal('IMG_0090.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0090.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'VisitingLibraries.jpg' onclick="openModal('VisitingLibraries.jpg');" src='resources/images/Organized/Staff/Icons/VisitingLibraries.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1581.JPG' onclick="openModal('DSCN1581.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1581.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0132.JPG' onclick="openModal('IMG_0132.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0132.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'story4.JPG' onclick="openModal('story4.JPG');" src='resources/images/Organized/Staff/Icons/story4.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1530.JPG' onclick="openModal('DSCN1530.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1530.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '154.JPG' onclick="openModal('154.JPG');" src='resources/images/Organized/Staff/Icons/154.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1533.JPG' onclick="openModal('DSCN1533.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1533.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0156.JPG' onclick="openModal('IMG_0156.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0156.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Tabletsforthestaff.jpg' onclick="openModal('Tabletsforthestaff.jpg');" src='resources/images/Organized/Staff/Icons/Tabletsforthestaff.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '151.JPG' onclick="openModal('151.JPG');" src='resources/images/Organized/Staff/Icons/151.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0153.JPG' onclick="openModal('IMG_0153.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0153.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0634.JPG' onclick="openModal('IMG_0634.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0634.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0151.JPG' onclick="openModal('IMG_0151.JPG');" src='resources/images/Organized/Staff/Icons/IMG_0151.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '123456789-0271.jpg' onclick="openModal('123456789-0271.jpg');" src='resources/images/Organized/Staff/Icons/123456789-0271.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1508.JPG' onclick="openModal('DSCN1508.JPG');" src='resources/images/Organized/Staff/Icons/DSCN1508.JPG' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20190921-WA0029.jpg' onclick="openModal('IMG-20190921-WA0029.jpg');" src='resources/images/Organized/Staff/Icons/IMG-20190921-WA0029.jpg' class='gallery-image Staff-gallery-image' alt="Nachiket Staff">
+                    </div>
+                    <!-- --- -->
+                                </div>
+          </div>
+          <div class="hidden-gallery hidden" id= 'Readers-gallery'>
+            <div class="gallery-triangle">
+              <img src="resources/icons/triangle.png" style="width:100%;height:auto;" alt="down-arrow">
+            </div>
+            <div class="gallery-container" id= 'Readers-gallery-container'>
+              <a id='Readers'></a>
+                                  <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN0592.JPG' onclick="openModal('DSCN0592.JPG');" src='resources/images/Organized/Readers/Icons/DSCN0592.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0149.JPG' onclick="openModal('IMG_0149.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0149.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture164.jpg' onclick="openModal('Picture164.jpg');" src='resources/images/Organized/Readers/Icons/Picture164.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0228.JPG' onclick="openModal('IMG_0228.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0228.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0158.JPG' onclick="openModal('IMG_0158.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0158.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1515.JPG' onclick="openModal('DSCN1515.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1515.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0212.JPG' onclick="openModal('IMG_0212.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0212.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture029.jpg' onclick="openModal('Picture029.jpg');" src='resources/images/Organized/Readers/Icons/Picture029.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1566.JPG' onclick="openModal('DSCN1566.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1566.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0117.JPG' onclick="openModal('IMG_0117.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0117.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1375.JPG' onclick="openModal('DSCN1375.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1375.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1188.JPG' onclick="openModal('DSCN1188.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1188.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture_008.jpg' onclick="openModal('Picture_008.jpg');" src='resources/images/Organized/Readers/Icons/Picture_008.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1197.JPG' onclick="openModal('IMG_1197.JPG');" src='resources/images/Organized/Readers/Icons/IMG_1197.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0667.JPG' onclick="openModal('IMG_0667.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0667.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2925.jpg' onclick="openModal('IMG_2925.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2925.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1558.JPG' onclick="openModal('DSCN1558.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1558.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0065.JPG' onclick="openModal('IMG_0065.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0065.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_1179.JPG' onclick="openModal('IMG_1179.JPG');" src='resources/images/Organized/Readers/Icons/IMG_1179.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1373.JPG' onclick="openModal('DSCN1373.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1373.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2868.jpg' onclick="openModal('IMG_2868.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2868.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture063.jpg' onclick="openModal('Picture063.jpg');" src='resources/images/Organized/Readers/Icons/Picture063.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0311.JPG' onclick="openModal('IMG_0311.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0311.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1370.JPG' onclick="openModal('DSCN1370.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1370.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0297.JPG' onclick="openModal('IMG_0297.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0297.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1590.JPG' onclick="openModal('DSCN1590.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1590.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0091Mcut.jpg' onclick="openModal('IMG_0091Mcut.jpg');" src='resources/images/Organized/Readers/Icons/IMG_0091Mcut.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2912.jpg' onclick="openModal('IMG_2912.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2912.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2907.jpg' onclick="openModal('IMG_2907.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2907.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0447.JPG' onclick="openModal('IMG_0447.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0447.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0321.JPG' onclick="openModal('IMG_0321.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0321.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '137.JPG' onclick="openModal('137.JPG');" src='resources/images/Organized/Readers/Icons/137.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0294.JPG' onclick="openModal('IMG_0294.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0294.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0690.JPG' onclick="openModal('IMG_0690.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0690.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0121.JPG' onclick="openModal('IMG_0121.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0121.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0108.JPG' onclick="openModal('IMG_0108.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0108.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2910.jpg' onclick="openModal('IMG_2910.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2910.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0322.JPG' onclick="openModal('IMG_0322.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0322.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0040.JPG' onclick="openModal('IMG_0040.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0040.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Picture094Mcut1.jpg' onclick="openModal('Picture094Mcut1.jpg');" src='resources/images/Organized/Readers/Icons/Picture094Mcut1.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'ph052.jpg' onclick="openModal('ph052.jpg');" src='resources/images/Organized/Readers/Icons/ph052.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0085.JPG' onclick="openModal('IMG_0085.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0085.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2958.jpg' onclick="openModal('IMG_2958.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2958.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0208.JPG' onclick="openModal('IMG_0208.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0208.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0143.JPG' onclick="openModal('IMG_0143.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0143.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_2973.jpg' onclick="openModal('IMG_2973.jpg');" src='resources/images/Organized/Readers/Icons/IMG_2973.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'pic043.jpg' onclick="openModal('pic043.jpg');" src='resources/images/Organized/Readers/Icons/pic043.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0635.JPG' onclick="openModal('IMG_0635.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0635.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'DSCN1091.JPG' onclick="openModal('DSCN1091.JPG');" src='resources/images/Organized/Readers/Icons/DSCN1091.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '123456789-0266.jpg' onclick="openModal('123456789-0266.jpg');" src='resources/images/Organized/Readers/Icons/123456789-0266.jpg' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0344.JPG' onclick="openModal('IMG_0344.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0344.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0409.JPG' onclick="openModal('IMG_0409.JPG');" src='resources/images/Organized/Readers/Icons/IMG_0409.JPG' class='gallery-image Readers-gallery-image' alt="Nachiket Readers">
+                    </div>
+                    <!-- --- -->
+                                </div>
+          </div>
+          <div class="hidden-gallery hidden" id= 'Community-gallery'>
+            <div class="gallery-triangle">
+              <img src="resources/icons/triangle.png" style="width:100%;height:auto;" alt="down-arrow">
+            </div>
+            <div class="gallery-container" id= 'Community-gallery-container'>
+              <a id='Community'></a>
+                                  <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '162.JPG' onclick="openModal('162.JPG');" src='resources/images/Organized/Community/Icons/162.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '215.JPG' onclick="openModal('215.JPG');" src='resources/images/Organized/Community/Icons/215.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '177.JPG' onclick="openModal('177.JPG');" src='resources/images/Organized/Community/Icons/177.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '175.JPG' onclick="openModal('175.JPG');" src='resources/images/Organized/Community/Icons/175.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '217.JPG' onclick="openModal('217.JPG');" src='resources/images/Organized/Community/Icons/217.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '174.JPG' onclick="openModal('174.JPG');" src='resources/images/Organized/Community/Icons/174.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '170.JPG' onclick="openModal('170.JPG');" src='resources/images/Organized/Community/Icons/170.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '164.JPG' onclick="openModal('164.JPG');" src='resources/images/Organized/Community/Icons/164.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'Rawala3.JPG' onclick="openModal('Rawala3.JPG');" src='resources/images/Organized/Community/Icons/Rawala3.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '159.JPG' onclick="openModal('159.JPG');" src='resources/images/Organized/Community/Icons/159.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0013.jpg' onclick="openModal('IMG_0013.jpg');" src='resources/images/Organized/Community/Icons/IMG_0013.jpg' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '171.JPG' onclick="openModal('171.JPG');" src='resources/images/Organized/Community/Icons/171.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '167.JPG' onclick="openModal('167.JPG');" src='resources/images/Organized/Community/Icons/167.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '173.JPG' onclick="openModal('173.JPG');" src='resources/images/Organized/Community/Icons/173.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '239.JPG' onclick="openModal('239.JPG');" src='resources/images/Organized/Community/Icons/239.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '172.JPG' onclick="openModal('172.JPG');" src='resources/images/Organized/Community/Icons/172.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '166.JPG' onclick="openModal('166.JPG');" src='resources/images/Organized/Community/Icons/166.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '277.JPG' onclick="openModal('277.JPG');" src='resources/images/Organized/Community/Icons/277.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20180515-WA0038.jpg' onclick="openModal('IMG-20180515-WA0038.jpg');" src='resources/images/Organized/Community/Icons/IMG-20180515-WA0038.jpg' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0271.JPG' onclick="openModal('IMG_0271.JPG');" src='resources/images/Organized/Community/Icons/IMG_0271.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0283.JPG' onclick="openModal('IMG_0283.JPG');" src='resources/images/Organized/Community/Icons/IMG_0283.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '281.JPG' onclick="openModal('281.JPG');" src='resources/images/Organized/Community/Icons/281.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG-20191015-WA0008.jpg' onclick="openModal('IMG-20191015-WA0008.jpg');" src='resources/images/Organized/Community/Icons/IMG-20191015-WA0008.jpg' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '243.JPG' onclick="openModal('243.JPG');" src='resources/images/Organized/Community/Icons/243.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '257.JPG' onclick="openModal('257.JPG');" src='resources/images/Organized/Community/Icons/257.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '280.JPG' onclick="openModal('280.JPG');" src='resources/images/Organized/Community/Icons/280.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0096.JPG' onclick="openModal('IMG_0096.JPG');" src='resources/images/Organized/Community/Icons/IMG_0096.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '282.JPG' onclick="openModal('282.JPG');" src='resources/images/Organized/Community/Icons/282.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '241.JPG' onclick="openModal('241.JPG');" src='resources/images/Organized/Community/Icons/241.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '240.JPG' onclick="openModal('240.JPG');" src='resources/images/Organized/Community/Icons/240.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0291.JPG' onclick="openModal('IMG_0291.JPG');" src='resources/images/Organized/Community/Icons/IMG_0291.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '244.JPG' onclick="openModal('244.JPG');" src='resources/images/Organized/Community/Icons/244.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '278.JPG' onclick="openModal('278.JPG');" src='resources/images/Organized/Community/Icons/278.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0657.JPG' onclick="openModal('IMG_0657.JPG');" src='resources/images/Organized/Community/Icons/IMG_0657.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '279.JPG' onclick="openModal('279.JPG');" src='resources/images/Organized/Community/Icons/279.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '245.JPG' onclick="openModal('245.JPG');" src='resources/images/Organized/Community/Icons/245.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '285.JPG' onclick="openModal('285.JPG');" src='resources/images/Organized/Community/Icons/285.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '180.JPG' onclick="openModal('180.JPG');" src='resources/images/Organized/Community/Icons/180.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '221.JPG' onclick="openModal('221.JPG');" src='resources/images/Organized/Community/Icons/221.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '220.JPG' onclick="openModal('220.JPG');" src='resources/images/Organized/Community/Icons/220.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '168.JPG' onclick="openModal('168.JPG');" src='resources/images/Organized/Community/Icons/168.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= 'IMG_0585.JPG' onclick="openModal('IMG_0585.JPG');" src='resources/images/Organized/Community/Icons/IMG_0585.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '222.JPG' onclick="openModal('222.JPG');" src='resources/images/Organized/Community/Icons/222.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '223.JPG' onclick="openModal('223.JPG');" src='resources/images/Organized/Community/Icons/223.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '169.JPG' onclick="openModal('169.JPG');" src='resources/images/Organized/Community/Icons/169.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '182.JPG' onclick="openModal('182.JPG');" src='resources/images/Organized/Community/Icons/182.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '179.JPG' onclick="openModal('179.JPG');" src='resources/images/Organized/Community/Icons/179.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '227.JPG' onclick="openModal('227.JPG');" src='resources/images/Organized/Community/Icons/227.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '178.JPG' onclick="openModal('178.JPG');" src='resources/images/Organized/Community/Icons/178.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '218.JPG' onclick="openModal('218.JPG');" src='resources/images/Organized/Community/Icons/218.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '219.JPG' onclick="openModal('219.JPG');" src='resources/images/Organized/Community/Icons/219.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                        <!-- Image -->
+                    <div class="gallery-image-container">
+                      <img id= '225.JPG' onclick="openModal('225.JPG');" src='resources/images/Organized/Community/Icons/225.JPG' class='gallery-image Community-gallery-image' alt="Nachiket Community">
+                    </div>
+                    <!-- --- -->
+                                </div>
+          </div>        </div>
+      </div>
+    </div>
+
+    <!DOCTYPE html>
+<div class="content-container" style="background: #36454F; padding-bottom: 10px;">
+  <div class="content">
+    <div class="footer">
+      <div class="column left">
+        <h2>Contact</h2>
+        <div style="display: flex; flex-direction: column; text-align: left;">
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/phone.png" style="width: inherit; height: inherit;" alt="phone icon"></div>
+            <div style="width:100%;"><p style="width:100%;">Mobile: 94 2284 1501</p><p style="width:100%;">Landline: (721) 257-1158</p></div>
+          </div>
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/email.png" style="width: inherit; height: inherit;" alt="email icon"></div>
+            <a style="width: calc(100% - 50px);" href="mailto:nachiket.balwachanalaya12@gmail.com">nachiket.balwachanalaya12@gmail.com</a>
+          </div>
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/home.png" style="width: inherit; height: inherit;" alt="address icon"></div>
+            <p>Flat# 12, Prabhakarraj Paradise Ambikanagar, Amravati 444 606</p>
+          </div>
+      </div>
+    </div>
+      <div class="column middle">
+        <h2 style="margin-bottom: 10px">Connect</h2>
+        <div class="icon-container">
+          <a href="https://www.facebook.com/NachiketBalWachanalay/" title="Facebook" target="_blank" style="width: inherit; height: inherit;"><img src="./resources/icons/facebook.png" style="width: inherit; height: inherit; margin-left: 30px;" alt="facebook icon"></a>
+        </div>
+      </div>
+      <div class="column right">
+        <h2>Get Involved</h2>
+        <ol>
+          <li><a style="color: inherit;" href="donate" onclick="donationLink();">Donate</a></li>
+          <li><a style="color: inherit;" href="volunteer">Volunteer</a></li>
+          </ol>
+      </div>
+    </div>
+  </div>
+  <p style="width: 90vw; margin: auto; font-size: 14px;color:white; text-align: center; margin-bottom:5px;">Copyright &#169 <script>document.write( new Date().getFullYear() );</script> Nachiket Bal Wachanalay | Website created by Jack Farley -- jackfarley1025(at)gmail(dot)com</p>
+</div>
+      <script src="resources/js/gallery.js"></script>
+      <script src="resources/js/index.js"></script>
+  </body>
+</html>

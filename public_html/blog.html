@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="noindex,follow">
+  <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/about.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/blog.css" type="text/css" rel="stylesheet">
+  <title>Nachiket Children's Libraries | Blog</title>
+  <link rel="icon" href="resources/icons/flavicon.png">
+  <meta name="description" content=">Learn more about what's going on at Nachiket, a nonprofit dedicated to getting books in the hands of disadvantaged children in India.">
+  <link rel=”canonical” href=”https://nachiketchildrenslibraries.org/blog” />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<a id="top"></a>
+
+<!DOCTYPE html>
+<div id="header">
+  <div id="float-container">
+    <a href = "/" title="Home"><div class="header-item" id = "logo-container">
+      <img src="resources/icons/Nachiket_Logo--English.png" alt="Nachiket logo" id="logo-image">
+    </div></a>
+    <div class="header-item" id = "menu">
+      <a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a>
+      <a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a>
+      <a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a>
+      <a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a>
+      <a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a>
+    </div>
+    <div class="header-item" id = "dropdown-icon-container">
+      <div id="nav-icon" onclick="navToggle(this); showDropdown();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
+  <nav id="menu-dropdown">
+    <ul>
+      <li><a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a></li>
+      <li><a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a></li>
+      <li><a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a></li>
+      <li><a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a></li>
+      <li><a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  var menuItem=document.getElementById("float-container").getElementsByClassName("menu-item");
+  for (i=0; i< menuItem.length; i++){
+    if(window.location.pathname.split("/").pop() == menuItem[i].parentElement.href.split("/").pop()){
+      menuItem[i].classList.add("current");
+    }
+  }
+</script>
+
+<div id="image-container">
+  <img id="aboutImage" src="resources/images/Organized/Readers/Images/IMG_2910-banner.jpg" style="object-position: center top; object-fit: cover;" alt="Nachiket readers">
+  <div id="about-title-container">
+    <h1 id="about-title">
+      The Blog
+    </h1>
+  </div>
+</div>
+
+<div class="content-container" style="background-color: #f8f8ff;">
+  <div class="content">
+    <div class="blogs-and-index-container">
+      <div class="blogs-container">
+        <div id="index-container">
+          <h2 class="index-title">BLOG ARCHIVE</h2>
+          <ul>
+                          <li><a href="javascript: void(0);" onclick="toggleCaret(0);" class="toggle"><span class="caret">►</span>
+                2021</a><ul class="collapsed-list" id='2021'><li><a href="javascript: void(0);" onclick="toggleCaret(1);" class="toggle"><span class="caret">►</span>
+                      March</a><ul class="collapsed-list" id='March'>                        <li><a onclick="setTimeout(function(){window.scrollBy(0, -100);}, 0);" href="#AThankYouNotetoDonors">A Thank You Note to Donors</a></li>
+                                                <li><a onclick="setTimeout(function(){window.scrollBy(0, -100);}, 0);" href="#PlansfortheNearFuture">Plans for the Near Future</a></li>
+                                                <li><a onclick="setTimeout(function(){window.scrollBy(0, -100);}, 0);" href="#LookingBack">Looking Back</a></li>
+                                                <li><a onclick="setTimeout(function(){window.scrollBy(0, -100);}, 0);" href="#NachiketDuringCOVID-19">Nachiket During COVID-19</a></li>
+                        </ul></li></ul></li>              </ul>
+            </div>
+
+            <div class="blog">
+  <a id = "AThankYouNotetoDonors"></a>
+  <div class="blog-title">
+    <h2>A Thank You Note to Donors</h2>
+  </div>
+  <hr class="blog-line">
+  <div class="blog-date">
+    Asha Pawagi | MARCH 4, 2021
+  </div>
+  <div class="blog-content">
+    <p>By gift-wrapping the quest for knowledge, joy of reading and
+      inspiration, you are paving the way to a brighter future.</p><br>
+
+    <p>Because of your enthusiastic support we continue to provide and maintain a creative
+      learning forum, a second-to-none book collection, and unique
+      library services such as Storytelling in which mothers are involved.
+      These are the home without books.</p><br>
+
+      <p>Your financial support is invaluable; every donated dollar has a
+        huge impact on a child's life.</p><br>
+
+        <p>Your generous support means we can update learning resources and
+          expand our reach to more villages.</p>
+  </div>
+</div>
+<div class="blog">
+  <a id="PlansfortheNearFuture"></a>
+  <div class="blog-title">
+    <h2>Plans for the Near Future</h2>
+  </div>
+  <hr class="blog-line">
+  <div class="blog-date">
+    Asha Pawagi | MARCH 4, 2021
+  </div>
+  <div class="blog-content">
+    <p>We want to upgrade our prototype of a one-room village children’s library and replicate in
+      many more villages. Amravati District has 1,200 villages.</p>
+      <br>
+      <p>We have a plan to establish at least one ideal library with ample space for:</p>
+      <br>
+      <ul>
+        <li>An attractive display of books and reference material</li>
+        <li>Book clubs, Science Fun, storytelling, and computer literacy programs</li>
+        <li>Easy accessibility to online educational material</li>
+      </ul>
+    </div>
+  </div>
+<div class="blog">
+  <a id="LookingBack"></a>
+    <div class="blog-title">
+      <h2>Looking Back</h2>
+    </div>
+    <hr class="blog-line">
+    <div class="blog-date">
+      Asha Pawagi | MARCH 4, 2021
+    </div>
+    <div class="blog-content">
+      <p>By building learning capabilities we are paving the way to brighter future.
+Children love participating in various competitions, quizzes, as well as reading/writing
+workshops and Fun with Science. Our readers say that Nachiket introduces to them the whole
+wide world outside their village. Children’s superb artwork shows their creative and
+imaginative power.</p>
+      <br>
+      <p><i>"Now our readers are teachers, engineers, pharmacists, policemen, and even woman- sarpanch."</i></p>
+      <br><p>&emsp;&emsp;   - Chief of village administration</p>
+      <br>
+      <p>Seema, who is now completing Engineering Degree in Nagpur, says &mdash;</p>
+      <br><p><i>“I consider myself lucky. Every child in every village, town, and city ought to have access to a
+library like this.”</i></p>
+      <br>
+    <div class="blog-image-container">
+      <img class="blog-image" src=".\resources\images\Blog\IMG_0121.JPG" alt="An empowered Nachiket reader">
+      <div class="blog-image-caption-container">
+        <p>An empowered Nachiket reader</p>
+      </div>
+    </div>
+      <p>Priti, now studying for B. Pharm., appreciates the alternative
+        independent learning environment provided by Nachiket in her own village
+        that is still not available to many children from nearby villages.</p>
+        <br>
+      <p>Yogesh is thankful that he got to explore a way beyond just the textbook
+        world of his school.</p>
+      <br>
+      <p>Children are extensively using libraries for their school projects on
+        subjects such as the effect of pollutants on the local farms, and space
+        travel based on a book at Nachiket that gives detailed accounts of real
+        travels to the moon with actual photos.</p><br>
+        <div class="blog-image-container">
+          <img class="blog-image" src=".\resources\images\Blog\IMG_0038.JPG" alt="Nachiket readers examining a globe">
+          <div class="blog-image-caption-container">
+            <p>Nachiket readers examining a globe</p>
+          </div>
+        </div>
+    </div>
+  </div>
+<div class="blog">
+  <a id="NachiketDuringCOVID-19"></a>
+  <div class="blog-title">
+    <h2>Nachiket During COVID-19</h2>
+  </div>
+  <hr class="blog-line">
+  <div class="blog-date">
+    Asha Pawagi | MARCH 4, 2021
+  </div>
+  <div class="blog-content">
+    <p>Children we serve totally depend on Nachiket for their educational and
+      reading needs. They are falling behind at alarming rates.</p>
+    <br>
+    <p>The staff is collaborating with other organizations with similar aims,
+      and Primary School teachers. This way we are able to provide library
+      services to small groups of children across the village and at the
+      library.</p>
+    <br>
+    <div class="blog-image-container">
+      <img class="blog-image" src="resources\images\Blog\Covid 1.jpg" alt="Nachiket library with physical distancing">
+      <div class="blog-image-caption-container">
+        <p>Nachiket library with physical distancing</p>
+      </div>
+    </div>
+    <p>Online learning has become an urgent necessity. We have purchased One
+      Laptop, Smart Phone, and four Tablets for a village of Satnoor.  We do
+      have a plan to equip at least five other libraries.</p>
+    <br>
+    <div class="blog-image-container">
+      <img class="blog-image" src="resources\images\Blog\Tabletsforthestaff.jpg" alt="Technology at Nachiket">
+      <div class="blog-image-caption-container">
+        <p>New technology at Nachiket</p>
+      </div>
+    </div>
+    <div class="blog-image-container">
+      <img class="blog-image" src="resources\images\Blog\Tiwasaghat in Covid.jpg" alt="Tiwasaghat in Covid">
+      <div class="blog-image-caption-container">
+        <p>Tiwasaghat in Covid</p>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="content-container" style="background-color: #f8f8ff;">
+      <div class="content">
+        <a href="#top" style="color: #2845AB; text-decoration: underline;">Return to top of page</a>
+      </div>
+    </div>
+
+    <!DOCTYPE html>
+<div class="content-container" style="background: #36454F; padding-bottom: 10px;">
+  <div class="content">
+    <div class="footer">
+      <div class="column left">
+        <h2>Contact</h2>
+        <div style="display: flex; flex-direction: column; text-align: left;">
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/phone.png" style="width: inherit; height: inherit;" alt="phone icon"></div>
+            <div style="width:100%;"><p style="width:100%;">Mobile: 94 2284 1501</p><p style="width:100%;">Landline: (721) 257-1158</p></div>
+          </div>
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/email.png" style="width: inherit; height: inherit;" alt="email icon"></div>
+            <a style="width: calc(100% - 50px);" href="mailto:nachiket.balwachanalaya12@gmail.com">nachiket.balwachanalaya12@gmail.com</a>
+          </div>
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/home.png" style="width: inherit; height: inherit;" alt="address icon"></div>
+            <p>Flat# 12, Prabhakarraj Paradise Ambikanagar, Amravati 444 606</p>
+          </div>
+      </div>
+    </div>
+      <div class="column middle">
+        <h2 style="margin-bottom: 10px">Connect</h2>
+        <div class="icon-container">
+          <a href="https://www.facebook.com/NachiketBalWachanalay/" title="Facebook" target="_blank" style="width: inherit; height: inherit;"><img src="./resources/icons/facebook.png" style="width: inherit; height: inherit; margin-left: 30px;" alt="facebook icon"></a>
+        </div>
+      </div>
+      <div class="column right">
+        <h2>Get Involved</h2>
+        <ol>
+          <li><a style="color: inherit;" href="donate" onclick="donationLink();">Donate</a></li>
+          <li><a style="color: inherit;" href="volunteer">Volunteer</a></li>
+          </ol>
+      </div>
+    </div>
+  </div>
+  <p style="width: 90vw; margin: auto; font-size: 14px;color:white; text-align: center; margin-bottom:5px;">Copyright &#169 <script>document.write( new Date().getFullYear() );</script> Nachiket Bal Wachanalay | Website created by Jack Farley -- jackfarley1025(at)gmail(dot)com</p>
+</div>
+
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/blog.js"></script>
+  </body>
+  </html>

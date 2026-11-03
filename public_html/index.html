@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+    <title>Nachiket Children's Libraries</title>
+    <meta name="description" content=">Nachiket Children's Libraries is a nonprofit committed to instilling a love
+    of reading in order to improve the quality of education for disadvantaged
+    children in India.">
+    <link rel="icon" href="resources/icons/flavicon.png">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="canonical" href="https://www.nachiketchildrenslibraries.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <!DOCTYPE html>
+<div id="header">
+  <div id="float-container">
+    <a href = "/" title="Home"><div class="header-item" id = "logo-container">
+      <img src="resources/icons/Nachiket_Logo--English.png" alt="Nachiket logo" id="logo-image">
+    </div></a>
+    <div class="header-item" id = "menu">
+      <a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a>
+      <a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a>
+      <a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a>
+      <a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a>
+      <a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a>
+    </div>
+    <div class="header-item" id = "dropdown-icon-container">
+      <div id="nav-icon" onclick="navToggle(this); showDropdown();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
+  <nav id="menu-dropdown">
+    <ul>
+      <li><a href = "about"><div class="menu-item"><p class="menu-text">About Us</p></div></a></li>
+      <li><a href="services"><div class="menu-item"><p class="menu-text">Our Work</p></div></a></li>
+      <li><a href="gallery"><div class="menu-item"><p class="menu-text">Gallery</p></div></a></li>
+      <li><a href="blog"><div class="menu-item"><p class="menu-text">Blog</p></div></a></li>
+      <li><a href="donate" onclick="donationLink();"><div class="menu-item"><p class="menu-text">Donate</p></div></a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  var menuItem=document.getElementById("float-container").getElementsByClassName("menu-item");
+  for (i=0; i< menuItem.length; i++){
+    if(window.location.pathname.split("/").pop() == menuItem[i].parentElement.href.split("/").pop()){
+      menuItem[i].classList.add("current");
+    }
+  }
+</script>
+      <div id="slideshow-container">
+        <div class="slide fade" style="max-width: calc(max(25vw, 70vh)/2*3); display: block;">
+          <img class="slide-image" src= "resources/images/Slides/IMG_0297.JPG" alt = "Girl with a book">
+          <div class="slide-text-container one">
+            <div class="slide-text"><h1 style="all: inherit;">Nachiket Children's Libraries</h1></div>
+            <a href="about"><div class="slide-button" style="background-color: #F9992F;">
+              <h2>About Us</h2>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="slide fade" style="max-width: calc(1.4*max(25vw,70vh)/2*3);">
+          <img class="slide-image" src= "resources/images/Slides/DSCF0868.JPG" style="object-position: right bottom; overflow: hidden; width: inherit;"  alt = "Nachiket readers with new reading materials">
+          <div class="slide-text-container two">
+            <div class="slide-text" style="text-align: center;">Reinventing Libraries</div>
+            <a href = "services"><div class="slide-button" style= "background-color: #428A19";>
+              <h2>Our Work</h2>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Slides/IMG_0208.JPG" style="object-position: left center;" alt="Nachiket reader with book">
+          <div class="slide-text-container three">
+            <div class="slide-text" style="text-align: left;">Creating Infinite Possibilities</div>
+            <a href = "gallery#Readers"><div class="slide-button" style= "background-color: #15368A";>
+              <h2>The Children</h2>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Slides/IMG_0585.JPG" alt="Ox drawn cart carrying Nachiket readers">
+          <div class="slide-text-container four">
+            <div class="slide-text" style="text-align: left;">Improving lives through literacy</div>
+            <a href = "gallery#Community"><div class="slide-button" style= "background-color: #F9992F";>
+              <h2>Our Community</h2>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Slides/artwork.jpg" style="object-position: left bottom; object-fit: cover;" alt="Children's artwork depicting library">
+          <div class="slide-text-container five">
+            <div class="slide-text" style="text-align: center;">Developing children's talents</div>
+            <a href="gallery#Artwork"><div class="slide-button" style= "background-color: #428A19";>
+              <h2>Their Artwork</h2>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img class="slide-image" src= "resources/images/Slides/DSCN1536.JPG" style="object-position: center top; object-fit: cover;" alt="A volunteer at Nachiket">
+          <div class="slide-text-container six">
+            <div class="slide-text" style="text-align: center;">Volunteer at Nachiket</div>
+            <a href="volunteer"><div class="slide-button" style= "background-color: var(--blue);";>
+              <h2>Join Us</h2>
+            </div></a>
+          </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+            <span class="dot" onclick="changeSlide(3)"></span>
+            <span class="dot" onclick="changeSlide(4)"></span>
+            <span class="dot" onclick="changeSlide(5)"></span>
+            <span class="dot" onclick="changeSlide(6)"></span>
+        </div>
+
+      </div>
+
+
+      <div class="content-container" style="background: #F6F5F2;">
+        <div class="content">
+          <h2 class="content-title">OUR MISSION</h2><br>
+          <p style="text-align: center">Instilling and supporting a love of reading in order to improve the
+            learning capabilities and the quality of education for disadvantaged
+            children.</p><br>
+        </div>
+      </div>
+
+      <div class="content-container" style="background: #f9f9f9;">
+        <div class="content">
+          <h2 class = "content-title" style="border-color: #418919">WHAT WE DO</h2><br>
+          <div class="work-display-container">
+            <div class="work-display">
+              <div class="work-item big" id="reading-work-item" onclick="" style="background-image: url('resources/images/Work/IMG_2928.JPG');">
+                <div class="work-text" style= "--work-text-expand-height: 190px">
+                  <h3>Inspiring a love of reading</h3>
+                  <p class="work-text-paragraph">An encouraging literary environment
+                    is crucial for a child’s future. Only with easy access to interesting
+                    and engaging reading material, will children be able to achieve
+                    and sustain the complex literacy level demanded by today’s rapidly
+                    changing, information-based world.</p>
+                </div>
+              </div>
+
+              <div class="work-display" style="width: 590px;">
+                <div class="work-item writing-work-item" onclick="" style="">
+                  <div class="work-text" style= "--work-text-expand-height: 150px">
+                    <h3>Writing workshops</h3>
+                    <p class="work-text-paragraph">Writing is a foundational skill
+                      that allows children to develop their full potential.</p>
+                  </div>
+                </div>
+
+                <div class="work-item small" id="beginning-work-item" onclick="" style="background-image: url('resources/images/Work/DSCN1515.JPG');">
+                  <div class="work-text" style= "--work-text-expand-height: 190px">
+                    <h3>Starting at the beginning</h3>
+                    <p class = "work-text-paragraph">Nachiket reaches out to the youngest
+                      readers through a reading program for children from infants
+                      to age five.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-display" style="width: 590px;">
+                <div class="work-item" id="artwork-work-item" onclick="" style="background-image: url('resources/images/Work/Scan17.jpg');">
+                  <div class="work-text" style= "--work-text-expand-height: 220px">
+                    <h3>Holistic literacy through art</h3>
+                    <p class = "work-text-paragraph">An easy availability of books
+                      and avenues to develop their talents (dance, drama, public
+                      speaking etc) is producing wonderful results.</p>
+                  </div>
+                </div>
+
+                <div class="work-item" id="science-work-item" onclick="">
+                  <div class="work-text" style= "--work-text-expand-height: 220px">
+                    <h3>Interactive science programs</h3>
+                    <p class = "work-text-paragraph">Recently Nachiket Libraries has
+                      started a program explaining science concepts with the help
+                      of hands-on experiments.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-item big" id="education-work-item" onclick="" style="background-image: url('resources/images/Work/IMG_0690.JPG'); background-position: left top;">
+                <div class="work-text" style= "--work-text-expand-height: 170px">
+                  <h3>Brighter futures through education</h3>
+                  <p class = "work-text-paragraph">Nourishing learning capacity is
+                    the incredible path to every child’s future. The children are
+                    winning competitions in schools, are publishing articles in
+                    Amravati newspapers, and are developing a wide interest for
+                    information about the world.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-container" style="background: #E4E4E4;">
+        <div class="content" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;">
+          <div class="number-item-container">
+            <div class="number-item">
+              <div class="number">
+                <script type="text/javascript">document.write( new Date().getFullYear()-2004 );</script>
+              </div>
+              <div class="number-text">
+                YEARS
+              </div>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div class="number-item-container">
+            <div class="number-item">
+              <div class="number">
+                14
+              </div>
+              <div class="number-text">
+                LIBRARIES
+              </div>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div class="number-item-container">
+            <div class="number-item">
+              <div class="number">
+                5000
+              </div>
+              <div class="number-text">
+                CHILDREN
+              </div>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div class="number-item-container">
+            <div class="number-item">
+              <div class="number">
+                27000
+              </div>
+              <div class="number-text">
+                BOOKS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!DOCTYPE html>
+<div class="content-container" style="background: #36454F; padding-bottom: 10px;">
+  <div class="content">
+    <div class="footer">
+      <div class="column left">
+        <h2>Contact</h2>
+        <div style="display: flex; flex-direction: column; text-align: left;">
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/phone.png" style="width: inherit; height: inherit;" alt="phone icon"></div>
+            <div style="width:100%;"><p style="width:100%;">Mobile: 94 2284 1501</p><p style="width:100%;">Landline: (721) 257-1158</p></div>
+          </div>
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/email.png" style="width: inherit; height: inherit;" alt="email icon"></div>
+            <a style="width: calc(100% - 50px);" href="mailto:nachiket.balwachanalaya12@gmail.com">nachiket.balwachanalaya12@gmail.com</a>
+          </div>
+          <div class="contact-container">
+            <div class="icon-container" style="width:25px;height: 25px;"><img src="./resources/icons/home.png" style="width: inherit; height: inherit;" alt="address icon"></div>
+            <p>Flat# 12, Prabhakarraj Paradise Ambikanagar, Amravati 444 606</p>
+          </div>
+      </div>
+    </div>
+      <div class="column middle">
+        <h2 style="margin-bottom: 10px">Connect</h2>
+        <div class="icon-container">
+          <a href="https://www.facebook.com/NachiketBalWachanalay/" title="Facebook" target="_blank" style="width: inherit; height: inherit;"><img src="./resources/icons/facebook.png" style="width: inherit; height: inherit; margin-left: 30px;" alt="facebook icon"></a>
+        </div>
+      </div>
+      <div class="column right">
+        <h2>Get Involved</h2>
+        <ol>
+          <li><a style="color: inherit;" href="donate" onclick="donationLink();">Donate</a></li>
+          <li><a style="color: inherit;" href="volunteer">Volunteer</a></li>
+          </ol>
+      </div>
+    </div>
+  </div>
+  <p style="width: 90vw; margin: auto; font-size: 14px;color:white; text-align: center; margin-bottom:5px;">Copyright &#169 <script>document.write( new Date().getFullYear() );</script> Nachiket Bal Wachanalay | Website created by Jack Farley -- jackfarley1025(at)gmail(dot)com</p>
+</div>
+
+
+    <script src="resources/js/gallery.js"></script>
+    <script src="resources/js/index.js"></script>
+
+  </body>
+
+</html>
