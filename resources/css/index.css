@@ -509,7 +509,7 @@ body{
 }
 
 #science-work-item {
-  background-image: url('../../resources/images/Work/Sciencefun.JPG');
+  background-image: url('../../resources/images/Work/Sciencefun.jpg');
   background-position: left center;
   background-size: 115%;
     width: 285px;
@@ -531,7 +531,7 @@ body{
 }
 
 .writing-work-item {
-    background-image: url('../../resources/images/Work/WritingEssays.JPG');
+    background-image: url('../../resources/images/Work/WritingEssays.jpg');
     background-size: 164%;
     background-repeat: repeat;
     background-position: left center;
